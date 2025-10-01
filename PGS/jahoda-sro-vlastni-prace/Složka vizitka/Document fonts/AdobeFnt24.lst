@@ -1,0 +1,29 @@
+%!Adobe-FontList 1.24
+%Locale:0x405
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:AcuminVariableConcept
+FamilyName:Acumin Variable Concept
+StyleName:Default
+FullName:Acumin Variable Concept Default
+MenuName:Acumin Variable Concept
+FamilyPrefix:AcuminConcept
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\it-martinsramek\OneDrive - SČMSD\1.IT\PGS\jahoda-sro-vlastni-prace\Složka vizitka\Document fonts\AcuminVariableConcept.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+hasCOLR:no
+VariableFontType:CFF2VariableFont
+FileLength:1029036
+FileModTime:1745564471
+WeightClass:275
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Acumin Variable Concept
+%EndFont
+
