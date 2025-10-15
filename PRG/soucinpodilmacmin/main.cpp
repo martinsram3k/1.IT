@@ -4,11 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a=4;
-    int b=2;
+    int a=8;
+    int b=0;
 
-    int soucin =a*b;
-    int podil =a/b;
 
     int min;
     int max;
@@ -16,21 +14,20 @@ int main()
 
 
     if (b==0) {
-       cout << "nelze delit nulou";
+       cout << "nelze delit nulou" << endl;
 
     } else {
 
         if (a>b) {
             max=a;
             min=b;
-
         }
 
       cout << "cislo a = " << a << endl;
       cout << "cislo b = " << b << endl;
       cout << endl;
-      cout << "soucin =  " << soucin << endl;
-      cout << "podil =   " << podil << endl;
+      cout << "soucin =  " << a*b << endl;
+      cout << "podil =   " << a/b << endl;
       cout << endl;
       cout << "min =     " << min << endl;
       cout << "max =     " << max << endl;
