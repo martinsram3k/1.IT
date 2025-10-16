@@ -5,16 +5,17 @@ using namespace std;
 int main()
 {
 
-    int s=620;
+ int A=3666;
+
+ int H=A/3600; // 2
+ int M=(A/60)-(H*60); // 17
+ int S=A-(H*3600)-(M*60);
 
 
-    int h=s/60; // 10
+ cout << "Hodiny:" << H << " " << endl;
+ cout << "Minuty:" << M << " " << endl;
+ cout << "Sekundy:" << S << " " << endl;
 
-    int z=s-(h*60);
-
-
-
-    cout << s << " " << h << " " << z << endl;
 
 
     return 0;
