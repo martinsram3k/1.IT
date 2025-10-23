@@ -3,10 +3,21 @@ using namespace std;
 
 int main() {
 
-   double a = 10;
-   double b = 10;
-   double c = 10;
+   double a;
+   double b;
+   double c;
    double s = 1;
+
+
+   cout << "Vlož èíslo A: ";
+   cin >> a;
+
+   cout << "Vlož èíslo B: ";
+   cin >> b;
+
+    cout << "Vlož èíslo C: ";
+   cin >> c;
+   cout << endl;
 
    if (a+b<c) {
 
