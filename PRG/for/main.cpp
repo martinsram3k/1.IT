@@ -6,7 +6,7 @@ int main()
 {
 
 
-    for (int i=1; i<=10; i++)
+    for (int i=1; i<=1000000000; i++)
         cout << i << " " ;
         return 0;
 }
