@@ -12,12 +12,14 @@ int main()
     cout << "pocastecni vklad: " << vklad << endl;
 
    for (int i = 0; i < (pocetlet + 1 ); i++) {
+
         cout << i << ". rok :" << endl;
-if (i == 0) {
-   vkladhold = vklad * urok;
-} else {
-vkladhold = vkladhold * urok;
-}
+
+        if (i == 0) {
+            vkladhold = vklad * urok;
+        } else {
+            vkladhold = vkladhold * urok;
+        }
 
     cout << vkladhold << endl;
   }
