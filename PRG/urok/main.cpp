@@ -4,25 +4,39 @@ using namespace std;
 
 int main()
 {
-    int vklad = 9999;
-    int vkladhold = 0;
-    double urok = 1.33;
-    int pocetlet = 10;
+    double vklad;
+    double aktualniZustatek;
+    double urokvklad;
+    int pocetlet;
 
-    cout << "pocastecni vklad: " << vklad << endl;
+    cout << "Zadejte pociatecni vklad: ";
+    if (!(cin >> vklad)) return 1;
 
-   for (int i = 0; i < (pocetlet + 1 ); i++) {
+    cout << "Zadejte urokove procento: ";
+    if (!(cin >> urokvklad)) return 1;
 
-        cout << i << ". rok :" << endl;
+    cout << "Zadejte pocet let: ";
+    if (!(cin >> pocetlet)) return 1;
 
-        if (i == 0) {
-            vkladhold = vklad * urok;
-        } else {
-            vkladhold = vkladhold * urok;
-        }
+    double urokovaSazba = urokvklad / 100.0;
 
-    cout << vkladhold << endl;
-  }
+    aktualniZustatek = vklad;
+
+    cout << endl;
+    cout << "Vklad = " << vklad << " Kc" << endl;
+    cout << "Urokova sazba = " << urokvklad << " %" << endl;
+    cout << "Pocet let = " << pocetlet << " Let" << endl;
+    cout << endl;
+
+    for (int i = 1; i <= pocetlet; i++) {
+
+        aktualniZustatek = aktualniZustatek * (1.0 + urokovaSazba);
+
+        cout << i << ". rok : Zustatek = " << aktualniZustatek << " Kc" << endl;
+    }
+
+    cout << endl;
+    cout << "Konecny zustatek po " << pocetlet << " letech: " << aktualniZustatek << " Kc" << endl;
 
     return 0;
 }
