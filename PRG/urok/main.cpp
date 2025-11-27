@@ -20,7 +20,7 @@ int main()
 
     double urokovaSazba = urokvklad / 100.0;
 
-    aktualniZustatek = vklad;
+    aktualniZustatek = 0;
 
     cout << endl;
     cout << "Vklad = " << vklad << " Kc" << endl;
