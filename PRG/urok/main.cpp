@@ -20,7 +20,7 @@ int main()
 
     double urokovaSazba = urokvklad / 100.0;
 
-    aktualniZustatek = vklad;
+    aktualniZustatek = 0;
 
     cout << endl;
     cout << "Vklad = " << vklad << " Kc" << endl;
@@ -29,7 +29,7 @@ int main()
     cout << endl;
 
     for (int i = 1; i <= pocetlet; i++) {
-
+        aktualniZustatek = aktualniZustatek + vklad;
         aktualniZustatek = aktualniZustatek * (1.0 + urokovaSazba);
 
         cout << i << ". rok : Zustatek = " << aktualniZustatek << " Kc" << endl;
