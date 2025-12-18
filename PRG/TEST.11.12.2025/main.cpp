@@ -1,27 +1,42 @@
+// Martin Sramek
+
 #include <iostream>
 
 int main() {
-    int cislo_vstup;
-    int cislo_k_praci;
-    int ciferny_soucin = 1;
-    int ciferny_soucet = 0;
+    int i;
+    int c;
+    int soucin = 1;
+    int soucet = 0;
     int cifra;
 
     std::cout << "Zadejte prirozene cislo : ";
-    std::cin >> cislo_vstup;
 
-    cislo_k_praci = cislo_vstup;
+    std::cin >> i;
+    c = i;
 
-    while (cislo_k_praci > 0) {
-        cifra = cislo_k_praci % 10;
-        ciferny_soucet += cifra;
+        if (c>9999){
+            return 0;
+        }
 
-        ciferny_soucin *= cifra;
-        cislo_k_praci /= 10;
-    }
+        if (c<1){
+            return 0;
+        }
 
-    std::cout << "Ciferny soucet = " << ciferny_soucet << std::endl;
-    std::cout << "Ciferny soucin = " << ciferny_soucin << std::endl;
+        while (c > 0) {
+
+            cifra = c % 10;
+
+            soucet += cifra;
+
+            c /= 10;
+
+            soucin *= cifra;
+
+        }
+
+    std::cout << "Ciferny soucet = " << soucet << std::endl;
+
+    std::cout << "Ciferny soucin = " << soucin << std::endl;
 
     return 0;
 }
