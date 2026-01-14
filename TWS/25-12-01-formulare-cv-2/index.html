@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulare cvičení 2</title>
+    </head>
+    <body>
+
+        <h2>Přihláška k šachovému turnaji</h2>
+
+        <form action="mailto:martinsramek040707@gmail.com" method="post">
+
+            <h3>Osobní údaje</h3>
+            <input type="text" name="jmeno" placeholder="Vaše jméno"
+                required><br><br>
+
+            <label for="prijmeni">Příjmení:</label>
+            <input type="text" id="prijmeni" placeholder="Vaše příjmení"
+                required><br><br>
+
+            <input type="email" placeholder="Váš E-mail" required><br><br>
+
+            <input type="password" placeholder="zadejte vaše heslo"
+                required><br><br>
+
+            <label for="narozeni">Datum narození:</label>
+            <input type="date" id="narozeni" required><br><br>
+
+            <h3>Informace o hráči</h3>
+            <h4>Preferovaná barva figur</h4>
+
+            <label for="cerna">černá:</label>
+            <input type="radio" id="cerna" name="barva" value="cerna" required>
+
+            <label for="bila">bílá:</label>
+            <input type="radio" id="bila" name="barva" value="bila"
+                required><br>
+
+            <h3>Úroveň dovedností</h3>
+            <select>
+                <option value="zacatecnik">začátečník</option>
+                <option value="pokrocily" selected>pokročilý</option>
+                <option value="expert">expert</option>
+            </select>
+
+            <br><br>
+
+            <label for="novinky">Chcete odebírat novinky?</label>
+            <input type="checkbox" id="novinky" name="novinky" checked>
+            <br><br>
+            <input type="submit" value="Odeslat přihlášku">
+            <br><br>
+            <input type="reset" value="Vymazat formulář">
+
+        </form>
+
+    </body>
+</html>

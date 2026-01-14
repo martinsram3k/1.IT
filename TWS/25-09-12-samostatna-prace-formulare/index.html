@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vytvoření postavy World of Warcraft</title>
+    </head>
+    <body>
+
+        <h1>Vytvoření postavy World of Warcraft</h1>
+
+        <form action method="post">
+
+            <input type="text" name="jmeno" placeholder="Jméno postavy"
+                required>
+            <br><br>
+
+            <input type="email" name="email" placeholder="E-mailová adresa"
+                required>
+            <br><br>
+
+            <input type="password" name="heslo" placeholder="Heslo" required>
+            <br><br>
+
+            <label for="datumnarozeni">Vaše datum narození:</label>
+            <input type="date" name="datumnarozeni" required>
+            <br><br>
+
+            <label for="pohlavi">Pohlaví postavy:</label>
+            <label for="muz">Muž</label>
+            <input type="radio" name="pohlavi" value="muz" required>
+            <label for="zena">Žena</label>
+            <input type="radio" name="pohlavi" value="zena" required>
+            <br><br>
+
+            <label for="rada">Rasa postavy:</label>
+            <select name="rada">
+                <option value="clovek">Člověk</option>
+                <option value="ork">Ork</option>
+                <option value="elf">Elf</option>
+                <option value="trpaslik">Trpaslík</option>
+            </select>
+            <br><br>
+
+            <label for="specializace">Specializace postavy:</label>
+            <label for="valecnik">Válečník:</label>
+            <input type="checkbox" name="specializace" value="valecnik">
+            <label for="mág">Mág:</label>
+            <input type="checkbox" name="specializace" value="mág">
+            <label for="zloděj">Zloděj:</label>
+            <input type="checkbox" name="specializace" value="zloděj">
+            <br><br>
+
+            <input type="submit" value="Vytvořit postavu">
+            <input type="reset" value="Smazat data">
+        </form>
+
+    </body>
+</html>

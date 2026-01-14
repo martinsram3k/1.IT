@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Obednávka dinosaura</title>
+    </head>
+    <body>
+        <h2>Sestav si svého dinosaura</h2>
+
+        <form>
+
+            <label for="jmeno">Jméno dinosaura:</label>
+            <input type="text" id="jmeno" name="dinosaur_name" required>
+
+            <br><br>
+
+            <input type="text" placeholder="Vaše adresa" required>
+            <input type="number" placeholder="PSČ" required>
+
+            <br><br>
+
+            <h3>Specifikace dinosaura</h3>
+
+            <label for="masozravec">Masozravec</label>
+            <input name="druh" id="masozravec" type="radio">
+            <label for="bilozravec">Bíložravec</label>
+            <input name="druh" id="bilozravec" type="radio">
+
+            <br><br>
+            <h3>Barva dinosaura:</h3>
+
+            <br>
+
+            <select name="barva" id="barva" required>
+                <option value="zluta">Žlutá</option>
+                <option value="zeleny">Zelený</option>
+                <option value="modry">Modrý</option>
+                <option value="cerveny">Červený</option>
+            </select>
+
+            <br><br>
+
+            <label for="drapy">Chcete drápy</label>
+            <input type="checkbox" id="drapy" name="drapy">
+
+            <br><br>
+
+            <textarea id="komentar" name="komentar" rows="20" cols="50"
+                placeholder="Sem přidejte váš komentář"></textarea>
+
+            <h3>Doplňující informace</h3>
+            <label for="vylihnuti">Předpokládané datum vylihnutí:</label>
+            <input type="date" id="vylihnuti" name="vylihnuti">
+
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+             <label for="tajne">Zadejte tajné heslo:</label>
+            <input type="password" id="tajne" name="tajne" required>
+
+            <br><br>
+
+            <input type="reset">Vymazat formulář</input>
+            <input type="submit">Objednat dinosaura</input>
+
+        </form>
+    </body>
+</html>
