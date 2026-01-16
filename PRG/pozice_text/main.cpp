@@ -5,20 +5,33 @@ using namespace std;
 
 int main()
 {
+    int SIRKA = 50;
+    int VYSKA = 15;
+
     system("cls");
     HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleCursorPosition(output, {0, 3});
 
-    SetConsoleCursorPosition(output, {10, 1});
-    cout << "XXXXXXXXXXXXXXX";
+    // horni radek
+    for (int i = 0; i <= SIRKA; i++)
+        cout << "X";
+    cout << endl;
 
-    for (int i = 2; i <= 6; i++) {
-        SetConsoleCursorPosition(output, {10, i});
-        cout << "X             X";
+    // stred
+    for (int j = 0; j <= VYSKA; j++) {
+        cout << "X";
+        for (int i = 0; i <= SIRKA - 2; i++)
+            cout << " ";
+        cout << "X";
+        cout << endl;
     }
 
-    SetConsoleCursorPosition(output, {10, 7});
-    cout << "XXXXXXXXXXXXXXX";
+    // dolni radek
+    for (int i = 0; i <= SIRKA; i++)
+        cout << "X";
+    cout << endl;
 
-    SetConsoleCursorPosition(output, {10, 10});
+    cout << endl << endl << endl << endl << endl;
+
     return 0;
 }
