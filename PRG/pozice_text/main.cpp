@@ -5,8 +5,14 @@ using namespace std;
 
 int main()
 {
-    int SIRKA = 50;
-    int VYSKA = 15;
+    int SIRKA;
+    int VYSKA;
+
+    cout << "Zadej sirku" <<endl;
+    cin >> SIRKA;
+
+    cout << "Zadej vysku" <<endl;
+    cin >> VYSKA;
 
     system("cls");
     HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
