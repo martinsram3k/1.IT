@@ -1,37 +1,37 @@
 body {
-    background-color: lightblue;
-    font-family:Tahoma;
+  background-color: lightblue;
+  font-family: Tahoma;
 }
 
 h1 {
-    color: navy;
-    border: 5px solid black;
-    width: fit-content;
-    font-size: 42px;
+  color: navy;
+  border: 5px solid black;
+  width: fit-content;
+  font-size: 42px;
 }
 
 h2 {
-    color: green;
-    font-size: 36px;
+  color: green;
+  font-size: 36px;
 }
 
 p {
-    font-size: 18px;
+  font-size: 18px;
 }
- li {
-    font-size: 24px;
- }
+li {
+  font-size: 24px;
+}
 
- .druhy_odstavec {
-    color: red;
-    text-align: center;
-    margin: auto;
- }
+.druhy_odstavec {
+  color: red;
+  text-align: center;
+  margin: auto;
+}
 
- ul li {
-    color: blue;
- }
+ul li {
+  color: blue;
+}
 
- #java {
-    color: darkorange;
- }
+#java {
+  color: darkorange;
+}
