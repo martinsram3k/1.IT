@@ -5,54 +5,62 @@ using namespace std;
 
 int main()
 {
-    int celkovyPocet;
-    cout << "zadej celkovy pocet znaku: ";
-    cin >> celkovyPocet;
+    int pocetOtocek;
+    cout << "Zadej pocet otocek: ";
+    cin >> pocetOtocek;
+
+
+    int celkemZatacek = pocetOtocek * 4;
 
     system("cls");
-    HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
+    HANDLE h = GetStdHandle(STD_OUTPUT_HANDLE);
 
 
-    int x = 2;
-    int y = 2;
+    int x = 30;
+    int y = 15;
+    int maxy = 0;
 
     int smer = 0;
+    int delka_strany = 1;
+    int ujito = 0;
+    int hotoveZatacky = 0;
+
+    while (hotoveZatacky < celkemZatacek + 1) {
 
 
-    int delka_strany = 20;
-    int ujito_v_smeru = 0;
-    int pocet_zatacek = 0;
-
-    for (int i = 0; i < celkovyPocet; i++) {
-        SetConsoleCursorPosition(output, { (short)(x * 2), (short)y });
+        SetConsoleCursorPosition(h, { (short)(x * 2), (short)(y * 1) });
         cout << "X";
         Sleep(30);
 
-        ujito_v_smeru++;
+        ujito = ujito + 1;
 
 
-        if (ujito_v_smeru >= delka_strany) {
-            ujito_v_smeru = 0;
-            smer = (smer + 1) % 4;
-            pocet_zatacek++;
+        if (ujito >= delka_strany) {
+            ujito = 0;
+            smer = smer + 1;
 
+            if (smer == 4) {
+                smer = 0;
+            }
 
+            hotoveZatacky = hotoveZatacky + 1;
 
-            if (pocet_zatacek % 2 == 0) {
-                delka_strany -= 2;
+            if (hotoveZatacky % 2 == 0) {
+                delka_strany = delka_strany + 2;
             }
         }
 
-        if (delka_strany <= 0) break;
 
 
-        if (smer == 0) x++;
-        else if (smer == 1) y++;
-        else if (smer == 2) x--;
-        else if (smer == 3) y--;
+        if (smer == 0) x = x + 1;
+        else if (smer == 1) y = y + 1;
+        else if (smer == 2) x = x - 1;
+        else if (smer == 3) y = y - 1;
+
+
+
     }
 
-
-    SetConsoleCursorPosition(output, { 0, 25 });
+    SetConsoleCursorPosition(h, { 0, (short) 17 + 2 * pocetOtocek });
     return 0;
 }
