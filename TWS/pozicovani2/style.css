@@ -1,0 +1,50 @@
+.hriste {
+  width: 1400px;
+  height: 800px;
+  background-color: green;
+  position: relative;
+}
+
+.hrac {
+  height: 50px;
+  position: absolute;
+  width: fit-content;
+  background-color: darkred;
+  color: white;
+}
+
+#c5 {
+  right: 100px;
+  top: 300px;
+}
+
+#c6 {
+  top: 400px;
+  right: -200px;
+}
+
+#c7 {
+  top: 600px;
+  left: 30%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 30px;
+  background-color: deeppink;
+  margin: 0;
+  width: fit-content;
+  margin-bottom: 1500px;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
