@@ -1,0 +1,39 @@
+/* Nastavení celkového vzhledu stránky */
+body {
+    background-color: #cccccc; /* Světle šedé pozadí podle obrázku */
+    line-height: 1.6; /* Lepší čitelnost textu */
+    padding: 20px;
+    color: #000000; /* Černá barva textu */
+}
+
+/* Styl pro hlavní nadpis */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Styl pro podnadpisy */
+h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Úprava seznamů */
+ul, ol {
+    margin-bottom: 20px;
+}
+
+/* Styl pro odkaz */
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Styl pro obrázek loga */
+.team-logo {
+    max-width: 300px; /* Omezení šířky, aby logo nebylo příliš velké */
+    display: block;
+    margin-top: 10px;
+    background-color: white; /* Bílý podklad pod logem, pokud je průhledné */
+}
