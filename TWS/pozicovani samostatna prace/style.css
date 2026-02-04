@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+
+nav ul {
+    background-color: aquamarine;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.les {
+    height: 800px;
+    width: 1400px;
+    border: solid 10px darkgreen;
+    position: relative;
+    top: 150px;
+    left: 10%;
+}
+
+.strom {
+    height: 112px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+    right: 200px;
+    bottom: 55px;
+}
