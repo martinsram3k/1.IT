@@ -1,0 +1,92 @@
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: Arial;
+  margin: 0;
+}
+
+h2 {
+  margin: auto;
+  border: white solid 5px;
+  padding: 15px;
+  width: fit-content;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.odkaz {
+  position: fixed;
+  top: 50px;
+  right: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    color: #222;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.odkaz a {
+    text-decoration: none;
+    background-color: beige;
+    color: #222;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #222;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container p {
+  font-size: 18px;
+}
+
+.podium {
+  height: 500px;
+  width: 900px;
+  background-color: beige;
+  position: relative;
+}
+
+.podium div {
+  width: 80px;
+  height: 80px;
+}
+
+.lp1 {
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  background-color: darkgreen;
+}
+
+.lp2 {
+  position: absolute;
+  bottom: 112px;
+  left: 250px;
+  background-color: crimson;
+}
