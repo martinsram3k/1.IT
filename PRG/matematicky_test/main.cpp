@@ -37,33 +37,50 @@ int main()
             { // Plus
                 operace = '+';
                 vysledek = cislo1 + cislo2;
-                if (vysledek <= maxCislo)
+                if (vysledek <= maxCislo && vysledek > 0 && cislo1 > 0 && cislo2 > 0) // Zajistime, ze vysledek bude v povolenem rozsahu a cisla budou nezaporna
                     nalezeno = true;
+                    else if (vysledek == 0 || vysledek == 1)
+                        {
+                            nalezeno = false; // Zamezime scitani nulou nebo jednickou, ktere by mohlo zpusobit zmatek
+                        }
             }
             else if (znamenko == 2)
             { // Minus
                 operace = '-';
                 vysledek = cislo1 - cislo2;
-                if (vysledek >= 0)
+                if (vysledek > 0 && vysledek <= maxCislo && cislo1 >= cislo2 && cislo1 > 0 && cislo2 > 0) // Zajistime, ze nevznikne zaporne cislo a vysledek bude v povolenem rozsahu
                     nalezeno = true;
+                    else if (vysledek == 0 || vysledek == 1)
+                    {
+                        nalezeno = false; // Zamezime odecteni nulou nebo jednickou, ktere by mohlo zpusobit zmatek
+                    }
+                    
             }
             else if (znamenko == 3)
             { // Krat
                 operace = '*';
                 vysledek = cislo1 * cislo2;
-                if (vysledek <= maxCislo && cislo1 != 0 && cislo2 != 0)
+                if (vysledek <= maxCislo && cislo1 != 0 && cislo2 != 0 && vysledek > 0 && cislo1 > 1 && cislo2 > 1) // Zajistime, ze vysledek bude v povolenem rozsahu a cisla budou nezaporna a nenulova
                     nalezeno = true;
+                    else if (vysledek == 0 || vysledek == 1)
+                    {
+                        nalezeno = false; // Zamezime vynasobeni nulou, ktere by mohlo zpusobit zmatek
+                    }
             }
             else if (znamenko == 4)
             { // Deleno
                 operace = '/';
                 // Nesmime delit nulou a chceme cele cislo (zbytek po deleni je 0)
-                if (cislo2 != 0 && cislo1 % cislo2 == 0)
+                if (cislo2 != 0 && cislo1 % cislo2 == 0 && cislo1 > 0 && cislo2 > 0 && vysledek > 0)
                 {
                     vysledek = cislo1 / cislo2;
-                    if (vysledek <= maxCislo)
+                    if (vysledek <= maxCislo && vysledek > 1)
                         nalezeno = true;
+                } else if (vysledek == 0 || vysledek == 1)
+                {
+                    nalezeno = false; // Zamezime deleni nulou a deleni jednickou, ktere by mohlo zpusobit zmatek
                 }
+                
             }
         }
 
