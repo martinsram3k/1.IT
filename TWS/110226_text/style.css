@@ -1,0 +1,48 @@
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Arial;
+  animation: background-color 10s linear infinite;
+}
+
+@keyframes background-color {
+  0% {
+    background-color: red;
+  }
+
+  50% {
+    background-color: green;
+  }
+
+  100% {
+    background-color: blue;
+  }
+}
+
+h2 {
+  color: darkgreen;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 2em;
+}
+
+span {
+  text-decoration:  underline wavy 5px greenyellow;
+  font-weight: bold;
+  animation: text-decoration 10s linear infinite;
+  text-transform: uppercase;
+  letter-spacing: 100px;
+}
+
+@keyframes text-decoration {
+  from {
+    text-decoration: underline wavy 2px greenyellow;
+  }
+  to {
+    text-decoration: underline wavy 5px greenyellow;
+  }
+}

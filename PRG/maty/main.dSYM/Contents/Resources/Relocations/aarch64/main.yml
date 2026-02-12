@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/martinsramek/Documents/1.IT/PRG/maty/main'
+relocations:     []
+...
