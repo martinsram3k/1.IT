@@ -8,8 +8,8 @@ int main()
 {
     srand(time(0));
 
-    const int pocetOtazek = 3;
-    const int maxCislo = 5;
+    const int pocetOtazek = 10;
+    const int maxCislo = 10;
 
     char operace;
     int vysledek;
@@ -54,7 +54,7 @@ int main()
                     {
                         nalezeno = false; // Zamezime odecteni nulou nebo jednickou, ktere by mohlo zpusobit zmatek
                     }
-                    
+
             }
             else if (znamenko == 3)
             { // Krat
@@ -80,7 +80,7 @@ int main()
                 {
                     nalezeno = false; // Zamezime deleni nulou a deleni jednickou, ktere by mohlo zpusobit zmatek
                 }
-                
+
             }
         }
 
