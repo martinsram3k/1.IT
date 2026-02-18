@@ -2,7 +2,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   font-family: Arial;
-  animation: background-color 10s linear infinite;
+  animation: background-color 2s linear infinite;
 }
 
 @keyframes background-color {
