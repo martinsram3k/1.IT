@@ -1,22 +1,26 @@
 #include <iostream>
 #include <string>
-#include <algorithm> // Pro funkci transform
+#include <algorithm>
 
 using namespace std;
 
-void upravJmeno() {
-    string jmeno;
-    cout << "Zadej jmeno (1 slovo): ";
-    cin >> jmeno;
-
+void upravJmeno(string &jmeno) {
     if (!jmeno.empty()) {
-        // Pøevedeme úplnì celé jméno na malá písmena
         for (int i = 0; i < jmeno.length(); i++) {
             jmeno[i] = tolower(jmeno[i]);
         }
-        // První písmeno zmìníme na velké
         jmeno[0] = toupper(jmeno[0]);
     }
+}
+
+int main() {
+    string jmeno;
+    cout << "Zadej jmeno: ";
+    cin >> jmeno;
+
+    upravJmeno(jmeno);
 
     cout << "Upravene jmeno: " << jmeno << endl;
+
+    return 0;
 }
