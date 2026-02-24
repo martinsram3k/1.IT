@@ -5,8 +5,8 @@ let x = parseInt(hlava.style.left) || 100;
 let y = parseInt(hlava.style.top) || 100;
 
 
-let speedX = 4;
-let speedY = 4;
+let speedX = 10;
+let speedY = 10;
 
 function animace() {
 
