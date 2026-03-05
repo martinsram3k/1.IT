@@ -25,7 +25,6 @@ int main() {
     do {
         showMenu();
         cin >> volba;
-        cin.ignore(); // Clears the newline character from the buffer
 
         switch (volba) {
             case 1:
