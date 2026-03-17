@@ -1,37 +1,72 @@
 body {
-    margin: 0;
-    background: #262626;
-    color: #dedede;
-    font-family: Verdana, sans-serif;
+  margin: 0;
+  background: #262626;
+  color: #dedede;
+  font-family: Verdana, sans-serif;
 }
 
 nav ul {
-    margin: 0;
-    background: maroon;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 0;
-    padding-right: 0;
-    list-style: none;
-    text-align: center;
+  margin: 0;
+  background: maroon;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 0;
+  padding-right: 0;
+  list-style: none;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline;
-
+  display: inline;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #dedede;
-    font-size: 18px;
-    font-weight: 900;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    transition: opacity 0.3s ease;
-    opacity: 0.5;
+  text-decoration: none;
+  color: #dedede;
+  font-size: 18px;
+  font-weight: 900;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
 }
 
 nav ul li:hover a {
-    opacity: 1;   
+  opacity: 1;
+}
+
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+section p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+section h2 {
+  font-size: 2.5em;
+  border-left: 0.3em solid maroon;
+  padding-left: 0.5em;
+}
+
+table {
+  border: 0.2em solid maroon;
+  padding: 10px;
+  margin: auto;
+}
+
+td {
+  padding: 10px;
+  width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+}
+
+tr td:first-child {
+  text-align: center;
+  font-weight: bolder;
+}
+
+td img {
+  width: 100%;
 }
