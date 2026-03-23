@@ -2,9 +2,8 @@ body {
   margin: 0;
   background: #262626;
   color: #dedede;
-  font-family: Verdana, sans-serif;
+  font-family: Verdana;
 }
-
 nav ul {
   margin: 0;
   background: maroon;
@@ -15,23 +14,19 @@ nav ul {
   list-style: none;
   text-align: center;
 }
-
 nav ul li {
   display: inline;
 }
-
-nav ul li a {
-  text-decoration: none;
+nav a {
   color: #dedede;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: bold;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  transition: opacity 0.3s ease;
-  opacity: 0.5;
+  text-decoration: none;
+  opacity: 0.7;
 }
-
-nav ul li:hover a {
+nav a:hover {
   opacity: 1;
 }
 
@@ -45,50 +40,75 @@ section p {
   line-height: 1.5em;
 }
 
-section h2 {
+h2 {
   font-size: 2.5em;
-  border-left: 0.3em solid maroon;
-  padding-left: 0.5em;
+  border-left: 0.3em solid hotpink;
+  padding-left: 1em;
 }
 
 table {
   border: 0.2em solid maroon;
-  margin: auto;
 }
 
 td {
-  padding: 10px;
-  width: 33.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
-  border-bottom: maroon 2px solid;
-}
-
-tr td:first-child {
-  text-align: center;
-  font-weight: bolder;
-}
-
-tr:last-child td {
-  border: none;
+  width: 33%;
+  border-bottom: 2px solid maroon;
 }
 
 td img {
   width: 100%;
 }
 
+tr td:first-child {
+  font-weight: bold;
+  text-align: center;
+}
 th {
   background: maroon;
   color: white;
   padding: 1em;
 }
-
-.moba img {
-  height: 10em;
-  float: left;
- margin-right: 2em;
+tr:last-child td {
+  border-bottom: none;
 }
 
+.moba img {
+  float: left;
+  height: 10em;
+  margin-right: 2em;
+}
 .rozdeleni {
   height: 3px;
   width: 100%;
   background: maroon;
+}
+.moba p {
+  width: 80%;
+}
+
+#mmo div {
+  padding: 1em 10%;
+}
+
+#mmo h2 {
+  margin-left: 10%;
+}
+
+#mmo {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.wow {
+  background: darkorchid;
+}
+
+.metin {
+  background: crimson;
+  color: goldenrod;
+}
+
+.roblox {
+  background: black;
+  color: white;
 }
