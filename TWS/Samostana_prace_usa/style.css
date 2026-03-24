@@ -1,0 +1,67 @@
+:root {
+  --primary-color: hsl(5, 78%, 40%);
+  --secondary-color: hsl(239, 100%, 24%);
+  --text-color: hsl(0, 0%, 95%);
+  --box-shadow: 0 0px 20px hsla(0, 0%, 0%, 1);
+  --body-color: hsl(240, 100%, 1%);
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma;
+}
+
+.navigace {
+  position: fixed;
+  top: 20px;
+  left: 10%;
+  width: 80%;
+  margin: auto;
+  height: 80px;
+  border-radius: 100px;
+  background: var(--text-color);
+  color: var(--body-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--box-shadow);
+}
+
+.navigace a {
+  text-decoration: none;
+  color: var(--body-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.navigace a:hover {
+  color: var(--primary-color);
+}
+
+.usa {
+  margin-left: 50px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.odkazy {
+  margin-right: 50px;
+  display: flex;
+  gap: 30px;
+  font-size: 2em;
+}
+
+.hero {
+  width: 100%;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  
+}
+
+.hero img {
+  width: 100%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
