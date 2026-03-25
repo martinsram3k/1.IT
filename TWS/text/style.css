@@ -1,0 +1,50 @@
+body {
+  background: lightblue;
+  font-family: Arial;
+  margin: 0;
+}
+
+h2 {
+  font-size: 42px;
+  color: darkorchid;
+  border: 3px solid crimson;
+  width: fit-content;
+  margin: auto;
+  letter-spacing: 8px;
+}
+
+.obsah {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.obsah p {
+  font-size: 18px;
+  line-height: 1.5em;
+  text-indent: 50px;
+}
+
+span {
+  color: red;
+  text-decoration: line-through 6px double yellow;
+}
+
+.obsah a {
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+
+/* style.css */
+.hlava {
+  position: absolute;
+  transition: none;
+}
+
+.hlava img {
+  width: 150px;
+  display: block;
+}

@@ -9,7 +9,7 @@ int main()
     srand(time(0));
 
     const int pocetOtazek = 10;
-    const int maxCislo = 2;
+    const int maxCislo = 2; 
 
     char operace;
     int vysledek;
@@ -27,93 +27,58 @@ int main()
 
         while (!nalezeno)
         {
-            cislo1 = rand() % maxCislo;
-            cislo2 = rand() % maxCislo;
+            
+            cislo1 = rand() % (maxCislo + 1);
+            cislo2 = rand() % (maxCislo + 1);
             znamenko = rand() % 4 + 1;
 
-            if (znamenko == 1)
-            { // Plus
+            if (znamenko == 1) // Sčítání
+            {
                 operace = '+';
                 vysledek = cislo1 + cislo2;
-                if (vysledek <= maxCislo && vysledek > 0 && cislo1 > 0 && cislo2 > 0) 
-                    nalezeno = true;
-                    else if (vysledek == 0 || vysledek == 1)
-                        {
-                            nalezeno = false; 
-                        }
+                // Podmínka: výsledek nesmí přesáhnout limit
+                if (vysledek <= maxCislo) nalezeno = true;
             }
-            else if (znamenko == 2)
-            { // Minus
+            else if (znamenko == 2) // Odčítání
+            {
                 operace = '-';
                 vysledek = cislo1 - cislo2;
-                if (vysledek > 0 && vysledek <= maxCislo && cislo1 >= cislo2 && cislo1 > 0 && cislo2 > 0) 
-                    nalezeno = true;
-                    else if (vysledek == 0 || vysledek == 1)
-                    {
-                        nalezeno = false; 
-                    }
-
+               
+                if (vysledek >= 0) nalezeno = true;
             }
-            else if (znamenko == 3)
-            { // Krat
+            else if (znamenko == 3) // Násobení
+            {
                 operace = '*';
                 vysledek = cislo1 * cislo2;
-                if (vysledek <= maxCislo && cislo1 != 0 && cislo2 != 0 && vysledek > 0 && cislo1 > 1 && cislo2 > 1) 
-                    nalezeno = true;
-                    else if (vysledek == 0 || vysledek == 1)
-                    {
-                        nalezeno = false; 
-                    }
+              
+                if (vysledek <= maxCislo) nalezeno = true;
             }
-            else if (znamenko == 4)
-            { // Deleno
+            else if (znamenko == 4) // Dělení
+            {
                 operace = '/';
-             
-                if (cislo2 != 0 && cislo1 % cislo2 == 0 && cislo1 > 0 && cislo2 > 0 && vysledek > 0)
+                
+                if (cislo2 != 0 && cislo1 % cislo2 == 0) 
                 {
                     vysledek = cislo1 / cislo2;
-                    if (vysledek <= maxCislo && vysledek > 1)
-                        nalezeno = true;
-                } else if (vysledek == 0 || vysledek == 1)
-                {
-                    nalezeno = false; 
+                    nalezeno = true;
                 }
-
             }
         }
 
-       
         int cisloPrikladu = i + 1;
-
-        if (cisloPrikladu < 10)
-        {
-            
-            cout << "       " << cisloPrikladu << ".  priklad: ";
-        }
-        else if (cisloPrikladu < 100)
-        {
-           
-            cout << "      " << cisloPrikladu << ".  priklad: ";
-        }
-        else if (cisloPrikladu < 1000)
-        {
-           
-            cout << "     " << cisloPrikladu << ".  priklad: ";
-        }
-        else
-        {
-            
-            cout << "   " << cisloPrikladu << ".  priklad: ";
-        }
-
-       
+   
+        cout << (cisloPrikladu < 10 ? "   " : "  ") << cisloPrikladu << ". priklad: ";
         cout << cislo1 << " " << operace << " " << cislo2 << " = ";
-        cin >> odpoved;
+      
+        if (!(cin >> odpoved)) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            odpoved = -1; 
+        }
 
-       
         if (odpoved == vysledek)
         {
-           
+            
         }
         else
         {
@@ -126,7 +91,8 @@ int main()
     cout << "Pocet prikladu:   " << pocetOtazek << endl;
     cout << "Spravne odpovedi: " << pocetOtazek - pocetSpatnychOdpovedi << endl;
     cout << "Spatne odpovedi:  " << pocetSpatnychOdpovedi << endl;
-    cout << "Uspestnost:       " << (pocetOtazek - pocetSpatnychOdpovedi) * 100 / pocetOtazek << " %" << endl;
+  
+    cout << "Uspesnost:        " << (pocetOtazek - pocetSpatnychOdpovedi) * 100 / pocetOtazek << " %" << endl;
     cout << "------------------------------------" << endl;
 
     return 0;

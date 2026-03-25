@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Tahoma;
+  background: antiquewhite;
+}
+
+@keyframes colorchange {
+  0%   {color: red;}
+  25%  {color: orange;}
+  50%  {color: rgb(141, 141, 0);}
+  75%  {color: green;}
+  100% {color: blue;}
+}
+
+@keyframes spacing {
+  0%   {letter-spacing: 10px;}
+  50%  {letter-spacing: 20px;}
+  100% {letter-spacing: 10px;}
+}
+
+@keyframes fontsize {
+  0%   {font-size: 38px;}
+  50%  {font-size: 48px;}
+  100% {font-size: 38px;}
+}
+
+@keyframes margin {
+  0%   {margin-left: 0;
+margin-right: 0;}
+  50%  {margin-left: 15%;
+margin-right: 15%;}
+  100% {margin-left: 0;
+margin-right: 0;}
+}
+
+@keyframes margin-top {
+  0%   {margin-top: 0;}
+  50%  {margin-top: 15%;}
+  100% {margin-top: 0;}
+}
+h2 {
+  animation: fontsize 5s infinite , margin-top 5s infinite ;
+  border: 3px solid darkred;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 1500px;
+}
+
+section {
+    animation: margin 5s infinite;
+}
+
+section p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    text-indent: 10px;
+}
+
+span {
+    font-weight: bold;
+    letter-spacing: 10px;
+ text-decoration: overline double 3px red;
+    animation: spacing 5s infinite , colorchange 5s infinite;
+    
+}
+
+.blok {
+    text-align: justify;
+}
+
+.leva {
+    text-align: left;
+}
+
+.prava {
+    text-align: right;
+}
+
+section a {
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    color: darkred;
+    text-decoration: none;
+    margin-top: 20px;
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
