@@ -17,8 +17,8 @@ body {
 .navigace {
   position: fixed;
   top: 20px;
-  left: 10%;
-  width: 80%;
+  left: 5%;
+  width: 90%;
   margin: auto;
   height: 80px;
   border-radius: 10px;
@@ -72,7 +72,7 @@ body {
   margin: auto;
 }
 
-.text h2 {
+.text  h2 {
   color: var(--primary-color);
   margin-top: 40px;
   border-left: 5px solid var(--primary-color);
@@ -126,3 +126,49 @@ footer p {
  max-width: 30%;
 }
 
+table {
+  border: 0.2em solid var(--primary-color);
+  width: 80%;
+  margin: auto;
+  margin-top: 150px;
+}
+
+td {
+  width: 33%;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+td img {
+  width: 100%;
+}
+
+tr td:first-child {
+  font-weight: bold;
+  text-align: center;
+}
+th {
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 1em;
+}
+tr:last-child td {
+  border-bottom: none;
+}
+
+.text section {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#text1 {
+  background-color: pink;
+}
+
+#text2 {
+  background-color: lightblue;
+}
+
+#text3 {
+  background-color: lightgreen;
+}

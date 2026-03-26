@@ -1,6 +1,6 @@
 // Definujeme dvě zprávy, které se budou střídat
-const zprava1 = "Vítejte v USA 🇺🇸";
-const zprava2 = "Jsme nejelpší! 🌟";
+const zprava1 = "🟦🟥 Vítejte v USA 🇺🇸";
+const zprava2 = "🟥🟦 Jsme nejelpší! 🌟";
 
 
 let ukazujiPrvni = true;
@@ -18,4 +18,4 @@ setInterval(() => {
     
     ukazujiPrvni = !ukazujiPrvni;
 
-}, 1000); 
+}, 100); 
