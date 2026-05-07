@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1778140146 source:c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\razeniodporu\main.cpp
+	<iostream>
+	"razeni.h"
+
+1778140148 c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\razeniodporu\razeni.h
+
+1778140140 source:c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\razeniodporu\paralelni.cpp
+	"razeni.h"
+
+1778140136 source:c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\razeniodporu\seriove.cpp
+	"razeni.h"
+

@@ -1,9 +1,16 @@
 #include <iostream>
+#include "razeni.h"
 
 using namespace std;
 
-int main()
-{
-    cout << "Hello world!" << endl;
+int main() {
+    double r1, r2;
+
+    cin >> r1;
+    cin >> r2;
+
+    cout << "Seriove zapojeni rezistoru " << r1 << " ohmu a " << r2 << " ohmu je " << seriove(r1, r2) << " ohmu." << endl;
+    cout << "Paralelni zapojeni rezistoru " << r1 << " ohmu a " << r2 << " ohmu je " << paralelni(r1, r2) << " ohmu." << endl;
+
     return 0;
 }
