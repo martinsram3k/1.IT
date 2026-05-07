@@ -10,6 +10,7 @@ int main() {
     cout << "Seriove zapojeni rezistoru " << r1 << " ohmu a " << r2 << " ohmu je " << seriove(r1, r2) << " ohmu." << endl;
     cout << "Paralelni zapojeni rezistoru " << r1 << " ohmu a " << r2 << " ohmu je " << paralelni(r1, r2) << " ohmu." << endl;
      cout << "Paralelni zapojeni rezistoru " << r1 << " ohmu a " << r2 << " ohmu je " << paralelni(r1, r2) << " ohmu." << endl;
+      cout << "Paralelni zapojeni rezistoru " << r1 << " ohmu a " << r2 << " ohmu je " << paralelni(r1, r2) << " ohmu." << endl;
 // komentar hjbadhsbdnas
     return 0;
 }
