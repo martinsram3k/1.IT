@@ -11,7 +11,7 @@ double castkaPoRoce(double aktualniCastka, double urok)
 
 int main()
 {
-    double vCastka; 
+    double vCastka;
     int pocetLet;
 
     cout << "Zadej vstupni castku: " << endl;
@@ -25,8 +25,8 @@ int main()
        cout << "Zadej urok % v " << i + 1 << ". roce : " << endl;
        cin >> urok;
 
-       vCastka = castkaPoRoce(vCastka, urok); 
-       
+       vCastka = castkaPoRoce(vCastka, urok);
+
        cout << "Castka po " << i + 1 << ". roce: " << vCastka << endl;
     }
 
