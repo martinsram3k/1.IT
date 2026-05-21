@@ -1,0 +1,84 @@
+:root {
+    --main-color: #ff3518;
+    --secondary-color: #eee;
+    --crimson: #dc143c;
+
+    --hlavni-font: 'Tahoma', sans-serif;
+    --vedlejsi-font: 'Times New Roman', serif;
+}
+
+body {
+    font-family: var(--hlavni-font);
+    background: var(--secondary-color);
+    padding: 1em;
+}
+
+a {
+    font-size: large;
+    color: var(--secondary-color);
+    background: var(--main-color);
+    padding: 3em;
+    margin: 5em;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    color: var(--main-color);
+    background: var(--secondary-color);
+}
+a:visited {
+    color: var(--crimson);
+}
+a:link {
+    color: #00f;
+}
+input {
+    padding: 1em;
+    border: none;
+    background: var(--secondary-color);
+}
+input:focus {
+    border: 1em solid #12e341;
+}
+table {
+    width: 75%;
+    border: 2px solid red;
+    padding: 0.5em;
+}
+th {
+    padding: 1em;
+    background: aquamarine;
+}
+td {
+    padding: 0.5em;
+    border-bottom: 0.1em hotpink solid;
+}
+table tr:last-child td {
+    border: none;
+}
+table tr:nth-child(2) {
+    color: navy;
+    font-weight: bold;
+}
+table tr td:last-child {
+    background: lime;
+}
+
+
+p {
+    font-size: 1em;
+    background: var(--main-color);
+}
+
+.barvicky {
+    background: var(--main-color);
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+
+    color: var(--secondary-color);
+    padding: 1em;
+    margin: 1em;
+    font-family: var(--vedlejsi-font);
+}
