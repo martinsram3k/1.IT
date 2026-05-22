@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-)
+
 bool cifryJsouVzestupne(int cislo) {
 
     if (cislo < 10) return true;
@@ -36,6 +36,10 @@ int main() {
 
         if (cislo == 0) {
             break;
+        }
+
+        if (cislo<10) {
+             pocetSplnenych++;
         }
 
         if (cifryJsouVzestupne(cislo)) {
