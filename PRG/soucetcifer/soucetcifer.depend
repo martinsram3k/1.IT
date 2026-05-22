@@ -1,4 +1,11 @@
 # depslib dependency file v1.0
-1779349432 source:c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\soucetcifer\main.cpp
+1779349731 source:c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\soucetcifer\main.cpp
 	<iostream>
+	"vypocty.h"
+
+1779349812 source:c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\soucetcifer\vypocty.cpp
+	"vypocty.h"
+	<iostream>
+
+1779349646 c:\users\it-martinsramek\onedrive - s»msd\dokumenty\github\1.it\prg\soucetcifer\vypocty.h
 
