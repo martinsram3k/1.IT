@@ -2,54 +2,59 @@
 
 using namespace std;
 
-bool cifryJsouVzestupne(int cislo) {
+bool cifryJsouVzestupne(int c)
+{
 
-    if (cislo < 10) return true;
+    if (c < 10)
+        return true;
 
-    int posledniCifra = cislo % 10;
-    cislo /= 10;
+    int posleni = c % 10;
+    c /= 10;
 
-    while (cislo > 0) {
-        int aktualniCifra = cislo % 10;
+    while (c > 0)
+    {
+        int aktualni = c % 10;
 
-        if (aktualniCifra + 1 != posledniCifra) {
+        if (aktualni + 1 != posleni)
+        {
             return false;
         }
 
-        posledniCifra = aktualniCifra;
-        cislo /= 10;
+        posleni = aktualni;
+        c /= 10;
     }
 
     return true;
 }
 
-int main() {
-    int cislo;
-    int poradoveCislo = 1;
-    int pocetSplnenych = 0;
+int main()
+{
+    int c;
+    int splnene = 0;
 
+    for (int pocetzadani = 1; pocetzadani > 0; pocetzadani++)
+    {
 
-    while (true) {
-        cout << "Vlozte " << poradoveCislo << ". cislo: ";
-        cin >> cislo;
+        cout << "Vlozte " << pocetzadani << ". cislo: ";
+        cin >> c;
 
+        if (c == 0)
+        {
 
-        if (cislo == 0) {
-            break;
+            cout << "Pocet cisel se vzestupnymi ciframi: " << splnene << endl;
+            pocetzadani = -1;
+            return 0;
+        }
+        else if (c < 10)
+        {
+            splnene++;
         }
 
-        if (cislo<10) {
-             pocetSplnenych++;
+        if (cifryJsouVzestupne(c))
+        {
+            splnene++;
         }
-
-        if (cifryJsouVzestupne(cislo)) {
-            pocetSplnenych++;
-        }
-
-        poradoveCislo++;
     }
-
-    cout << "Pocet cisel se vzestupnymi ciframi: " << pocetSplnenych << endl;
 
     return 0;
 }
