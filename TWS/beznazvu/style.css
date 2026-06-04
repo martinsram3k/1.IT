@@ -1,0 +1,81 @@
+:root {
+  --bg-color: #f4f7f6;
+  --text-color: #333;
+  --card-bg: #fff;
+  --primary-color: #007bff;
+  --primary-color-hover: #0056b3;
+}
+
+:root:has(#theme-toggle:checked) {
+  --bg_color: #1e1e1e;
+  --text-color: #f4f7f6;
+  --card-bg: #2c2c2c;
+  --primary-color: goldenrod;
+  --primary-color-hover: brown;
+}
+
+body {
+    font-family: Tahoma;
+    background: var(--bg_color);
+    color:var(--text-color);
+    margin: 0;
+    padding: 2em 1em;
+    transition: background 200s ease-in-out, color 200s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5em;
+    width: 25%;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.8s ease-in-out, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.card:first-child  {
+    border: 2px solid var(--primary-color);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    color: var(--card-bg);
+    background: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card a:hover {
+    background: var(--primary-color-hover);
+    color: var(--card-bg);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background: var(--primary-color);
+    border: none;
+    color: var(--card-bg);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
