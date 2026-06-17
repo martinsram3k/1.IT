@@ -1,0 +1,104 @@
+:root {
+  font-family: "Open Sans";
+
+  --primary: #34bf7e;
+  --secondary: #f2ae2e;
+  --tercial: #bf1a0b;
+  --bg: #d0d7d9;
+  --text: #333;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.logo img {
+  width: 33.3333333333%;
+}
+
+nav {
+  background-color: var(--primary);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--tercial);
+  margin: 0 1rem;
+}
+
+#restaurace {
+  background: var(--secondary);
+}
+
+section {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.container {
+  width: 73%;
+  margin: auto;
+}
+
+#restaurace h2 {
+  border-left: var(--tercial) 0.5rem solid;
+  margin: 0 0 1.5rem 0;
+  padding-left: 1rem;
+}
+section p {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.tucne {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+table img {
+  width: 100%;
+}
+
+.obrazek {
+  width: 33.3333333333%;
+}
+
+.nazev {
+  font-size: 1.8rem;
+  color: var(--tercial);
+  padding-left: 2rem;
+  background: white;
+}
+
+.cena {
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  background: var(--secondary);
+}
+
+table {
+  margin: 2rem 0;
+  box-shadow: 5px 5px 15px var(--text);
+}
